@@ -87,12 +87,12 @@ label #DivRecordar{
 	width: 20px;
 	height: 20px;
 	margin-right: 5px;
-	background-color: #b0bec5;
-	color: #b0bec5;
+	background-color: #37474f;
+	color: #37474f;
 	display: inline-block;
 	cursor: pointer;
 	border:solid 1px #fff;
-
+	line-height: 19px
 
 }
 
@@ -100,8 +100,7 @@ label #DivRecordar{
 	   transition: all 0.5s;
        color: #fff;
        font-weight: bold;
-	padding-bottom: 6px;
-	margin-top: -5px;
+
 }
 
 
@@ -247,6 +246,17 @@ html[data-useragent*='Edge'] #Start { /* hace que el boton de iniciar secion se 
 	overflow-y: auto;
 
 }
+
+/** Estilos para el contenedor de formas de culminacion **/
+
+
+
+body .ng-scope:nth-of-type(3){
+	color:red;
+}
+
+
+/** --------------------------------------------------- **/
 
 
 footer{ /** Estilos del footer **/
