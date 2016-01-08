@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" ng-app="IndexApp">
 <head>
 
 	<meta charset="UTF-8">
@@ -10,10 +10,79 @@
 
 	<title>SIGECE Inicio</title>
 	
+	<link rel="stylesheet" href="css/index.css">
 	<link href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet">
+	<script src="js/angular.min.js"></script>
+    <script src="controllers/controller_index.js"></script>
+
+    <script> <!--  este script es para identificar a cada navegador y asi aplicar css especifico en cada uno-->
+var d0cum3n7e13m3n7 = document.documentElement; 
+d0cum3n7e13m3n7.setAttribute('data-useragent', navigator.userAgent); 
+d0cum3n7e13m3n7.setAttribute('data-platform', navigator.platform); 
+d0cum3n7e13m3n7.className += ((!!('ontouchstart' in window) || !!('onmsgesturechange' in window))?' touch':''); 
+</script>
+
 </head>
 <body>
+	<div class="FormaCulminacion"  ng-controller="IndexController">
+		<ul>
+			<li ng-repeat="post in posts">
+				<h2>{{post.title}}</h2>
+				<p>{{post.body}}</p>
+			</li>
+		</ul>
+	</div>
+
+<aside>
+<div class="containerIniReg">
+	<div class="Tabs">
+
+	<input type="radio" class="vbn">
 	
+	<label for="toggle" class="LoguinView">Iniciar Sesión</label>
+	<label for="toggle2" class="RegistroView">Registrarse</label>
+
+	</div>
+			<article class="loguin">
+				<input type="radio" id="toggle" name="tabs" checked>
+
+<div class="to-be-changed">
+	<form action="">
+					<h2>Iniciar sesión</h2>
+					<div class="inputCont">
+					<input type="email" id="inputEmail" placeholder="Email" required autofocus class="text">
+					<input type="password" id="inputPassword" placeholder="Contraseña" required class="text">
+					</div>
+					
+					<div class="ContainerRecordar">
+					<input type="checkbox" id="Recordar">
+                    <label for="Recordar"><div id="DivRecordar">✓</div>Recordar mis datos</label>
+					</div>
+
+					<a href="recuperar_contrasenia.html"><p>No puedo iniciar sesión</p></a>
+					<input type="submit" value="Iniciar" class="submit" id="Start">
+				</form>
+</div>
+<input type="radio" id="toggle2" name="tabs">
+<div class="to-be-changed2">
+	<form action="" id="FormRegistro">
+					<h2>Registrarse</h2>
+					<div class="inputCont">
+
+					<input type="text"  placeholder="Nombres" required autofocus class="text">
+					<input type="text" placeholder="Apellidos" required class="text">
+					<input type="text"  placeholder="Número de carnet" required autofocus class="text">
+					<input type="email" placeholder="Correo electrónico" required class="text">
+					<input type="tel" placeholder="Telefon/Celular" required class="text">
+
+					</div>
+					<input type="submit" value="Registrarse" class="submit" id="Start2">
+				</form>
+</div>
+			</article>
+</div>
+		</aside>
+	<footer><div class="container"><h3>Facultad de Ciencias y Sistemas</h3></div></footer>
 </body>
 </html>
