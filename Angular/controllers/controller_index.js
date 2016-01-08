@@ -1,13 +1,4 @@
-angular.module("IndexApp",[])
+angular.module("IndexApp",["ngRoute"])
+.controller("indexController",function($scope){
 
-.controller("IndexController",function($scope,$http){
-	$scope.posts=[];
-$http.get('http://jsonplaceholder.typicode.com/posts')
-	.success(function(data){
-		console.log(data);
-		$scope.posts = data;
-	})
-	.error(function(err){
-
-	});
 });
