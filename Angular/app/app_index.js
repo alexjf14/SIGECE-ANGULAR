@@ -1,4 +1,4 @@
-angular.module("IndexApp",["ngRoute"])
+angular.module("IndexApp",["ngRoute","ngResource"])
 
 .config(function($routeProvider){
 	$routeProvider
