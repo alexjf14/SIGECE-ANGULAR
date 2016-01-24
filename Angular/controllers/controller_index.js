@@ -10,6 +10,11 @@ IndexApp.config(function($routeProvider) {
             templateUrl : 'templates/inicio.html',
             controller  : 'IndexController'
         })
+
+        .when('/recuperar', {
+            templateUrl : 'templates/recuperar_contrasenia.html'
+           
+        })
  
         .otherwise({
             redirectTo: '/'

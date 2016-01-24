@@ -1,9 +1,15 @@
-<div class="FormaCulminacion"  ng-controller="IndexController">
-		<ul>
-			<li ng-repeat="post in posts | limitTo:3">
-				<h2>{{post.code}}</h2>
-				<p>{{post.name}}</p>
+<div class="FormaCulminacion"   ng-controller="IndexController">
+
+		<ul id ="slider-container">
+			<div  id ="slider-box">
+			<li  ng-repeat="post in posts | limitTo:3" class="slider-element">
+				
+				
+				<h2>{{post.name}}</h2>
+				<p>{{post.note}}</p>
+				
 			</li>
+			</div>
 		</ul>
 	</div>
 
@@ -33,7 +39,7 @@
                     <label for="Recordar"><div id="DivRecordar">✓</div>Recordar mis datos</label>
 					</div>
 
-					<a href="recuperar_contrasenia.html"><p>No puedo iniciar sesión</p></a>
+					<a href="#/recuperar/"><p>No puedo iniciar sesión</p></a>
 					<input type="submit" value="Iniciar" class="submit" id="Start">
 				</form>
 </div>
@@ -56,3 +62,4 @@
 			</article>
 </div>
 		</aside>
+
