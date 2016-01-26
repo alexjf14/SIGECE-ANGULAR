@@ -1,6 +1,10 @@
+
+
 <div class="FormaCulminacion"   ng-controller="IndexController">
 
-		<ul id ="slider-container">
+	<div class="fullContent" ng-show="loading"> Cargando... </div>
+
+		<ul id ="slider-container" ng-hshow="posts.length > 0" class="animated">
 			<div  id ="slider-box">
 			<li  ng-repeat="post in posts | limitTo:3" class="slider-element">
 				
@@ -12,6 +16,8 @@
 			</div>
 		</ul>
 	</div>
+
+	
 
 <aside>
 <div class="containerIniReg">
@@ -63,3 +69,4 @@
 </div>
 		</aside>
 
+<footer><div class="container"><h3>Facultad de Ciencias y Sistemas</h3></div></footer>
