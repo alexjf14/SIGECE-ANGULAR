@@ -15,6 +15,11 @@ IndexApp.config(function($routeProvider) {
             templateUrl : 'templates/recuperar_contrasenia.html'
            
         })
+
+        .when('/plantilla', {
+            templateUrl : 'templates/plantilla.html'
+           
+        })
  
         .otherwise({
             redirectTo: '/'
@@ -33,4 +38,6 @@ IndexApp.controller("IndexController",function($scope,$http){
 	.error(function(err){
         $scope.loading = false;
 	});
+
+    
 });
