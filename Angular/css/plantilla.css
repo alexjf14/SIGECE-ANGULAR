@@ -85,12 +85,15 @@ label i{
     overflow: hidden;
     overflow-y: auto;
 }
+
+html[data-useragent*='Firefox'] .MenuLateral a { /*  propiedad para mozilla */
+	overflow: hidden;
+    overflow-y: auto;
+}
+
 .MenuLateral ul{
 	display: block;
 	background-color: transparent;
-	
-
-
 }
 
 .MenuLateral li{
@@ -98,6 +101,8 @@ label i{
 	background-color: transparent;
 	width: 100%;
 	min-width: 100%;
+	padding-top: 0px;
+	padding-bottom: 0px;
 }
 
 .MenuLateral li:hover{
@@ -109,15 +114,48 @@ label i{
 }
 
 
-.MenuLateral a{
-	padding: 20px;
+html[data-useragent*='Firefox'] .MenuLateral a { /*  propiedad para mozilla */
+	padding: 25px;
 	padding-right: 255px;
+	display: inline-flex;
+    vertical-align: middle;
+    max-height: 15px;
+    padding-bottom: 45px;
+}
 
+html[data-useragent*='NT'] .MenuLateral a { /*  Microsoft edge y internet explorer */
+	padding: 25px;
+	padding-left: 0px;
+	padding-right: 255px;
+	display: inline-flex;
+    vertical-align: middle;
+    max-height: 15px;
+    padding-bottom: 45px;
 
 }
 
+html[data-useragent*='Chrome'] .MenuLateral a { /*  propiedad para mozilla */
+	padding: 25px;
+	padding-left: 5px;
+	padding-right: 255px;
+	display: inline-flex;
+    vertical-align: middle;
+    max-height: 15px;
+    padding-bottom: 45px;
+}
+
+html[data-useragent*='iPad'] .MenuLateral a { /*  propiedad para mozilla */
+	padding: 25px;
+	padding-left: 5px;
+	padding-right: 255px;
+	display: inline-flex;
+    vertical-align: middle;
+    max-height: 15px;
+    padding-bottom: 45px;
+}
+
 .MenuLateral span{
-	padding-left: 8px;
+	padding-left: 12px;
 }
 
 #toggle, #graficos{
@@ -161,3 +199,7 @@ label i{
 
 }
 
+.BootomItems{
+	bottom: 0;
+	position: fixed;
+}

@@ -27,6 +27,7 @@
 }
 
 
+
 body{
 background-image: url("../img/fondo.jpg"); 
 background-attachment: fixed; 
@@ -557,3 +558,21 @@ footer{ /** Estilos del footer **/
     z-index: -1;
     
   }
+
+  @media  screen and (max-width:800px){
+
+  	::-webkit-scrollbar {
+    width: 0px;
+
+}
+
+::-webkit-scrollbar-track {
+    background-color: transparent; 
+    border-radius: 0px;
+}
+ 
+::-webkit-scrollbar-thumb {
+    border-radius: 0px;
+    background-color: transparent; 
+}
+}
