@@ -16,10 +16,6 @@ IndexApp.config(function($routeProvider) {
            
         })
 
-        .when('/plantilla', {
-            templateUrl : 'templates/plantilla.html'
-           
-        })
  
         .otherwise({
             redirectTo: '/'

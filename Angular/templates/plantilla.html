@@ -1,12 +1,45 @@
- <link rel="stylesheet" href="css/plantilla.css">
+<!DOCTYPE html>
+<html lang="es" ng-app="PagesApp">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<meta name="description" content="Sistema web para administración de formas de culminación de estudios de la facultad de ciencias y sistemas de Univercidad Nacional de Ingeniería UNI">
+    <meta name="author" content="Néstor Alberto Molina Morán y Alex José Flores Rivas">
+    <link rel="icon" href="../img/favicon.ico">
 
-<nav class="Menu_Plantilla">
+	<title>SIGECE</title>
+
+	
+
+	 <link rel="stylesheet" href="../css/index.css">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<link rel="stylesheet" href="../css/no_webkit.css">
+
+	 <link rel="stylesheet" href="../css/plantilla.css">
+	 <link rel="stylesheet" href="../css/notificaciones.css">
+
+	<script src="../js/angular.min.js"></script>
+	<script src="../js/angular-route.min.js"></script>
+    <script src="../controllers/controller_pages.js"></script>
+
+
+
+    <script> <!--  este script es para identificar a cada navegador y asi aplicar css especifico en cada uno-->
+var d0cum3n7e13m3n7 = document.documentElement; 
+d0cum3n7e13m3n7.setAttribute('data-useragent', navigator.userAgent); 
+d0cum3n7e13m3n7.setAttribute('data-platform', navigator.platform); 
+d0cum3n7e13m3n7.className += ((!!('ontouchstart' in window) || !!('onmsgesturechange' in window))?' touch':''); 
+</script>
+</head>
+<body>
+	
+	<nav class="Menu_Plantilla">
 	<ul>
+
 		<label class="Hamburger" for="toggle"><i class="material-icons">reorder</i></label>
-		
-		<li><a href=""><i class="material-icons">public</i></a></li>
+		<label class="PublicIcon" for="ShowNotification"><i class="material-icons">public</i></label>
 		<li><a href=""><i class="material-icons">help_outline</i></a></li>
-		<li><a href=""><i class="material-icons">exit_to_app</i></a></li>
+		<li><a href="../index.html"><i class="material-icons">exit_to_app</i></a></li>
 		<label class="arrows" for="graficos"><i class="material-icons">compare_arrows</i></label>
 
 
@@ -15,14 +48,14 @@
 		<input type="checkbox" id="toggle">
 		<nav class="MenuLateral">
 			<ul>
-				<li><a href=""><i class="material-icons">home</i> <span>Inicio</span></a></li>
+				<li><a href="#/"><i class="material-icons">home</i> <span>Inicio</span></a></li>
 				<li><a href=""><i class="material-icons">date_range</i> <span>Calendario</span></a></li>
 				<li><a href=""><i class="material-icons">message</i> <span>Mensajes</span></a></li>
-				<li><a href=""><i class="material-icons">home</i> <span>Grupos</span></a></li>
-				<li><a href=""><i class="material-icons">person</i> <span>Tutor</span></a></li>
+				<li><a href="#/grupos/"><i class="material-icons">group_work</i> <span>Grupos</span></a></li>
+				<li><a href=""><i class="material-icons">assignment</i> <span>Monografía</span></a></li>
 
 				<div class="BootomItems">
-				<li ><a href=""><i class="material-icons">feedback</i> <span>FeedBack</span></a></li>
+				<li ><a href="#/feedback/"><i class="material-icons">feedback</i> <span>FeedBack</span></a></li>
 				<li><a href=""><i class="material-icons">settings</i> <span>Configuración</span></a></li>
 				</div>
 				
@@ -53,10 +86,110 @@
 				</div>
 		</div>
 		
-		<div class="ContenidoFiles">
+		<div class="ContenidoFiles" ng-view>
 			
-			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis quia dignissimos repudiandae fugiat eius illum corporis nostrum, voluptatibus consequuntur exercitationem iste fugit voluptate, neque excepturi perspiciatis, minus optio ex unde.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam tempora blanditiis ratione vitae culpa ducimus illo ab, adipisci error, modi, magnam officia, fuga placeat. Est ullam error quam accusantium modi.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil minus tempora nam ad nulla omnis dolor quis impedit pariatur consequatur earum quam odit, sit cumque sint animi unde nisi perspiciatis.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur, in? Beatae nam, omnis laborum, consequatur accusamus ea asperiores rerum soluta maiores in ratione, placeat! Nemo, enim quis at accusamus culpa.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet beatae ut ad sunt earum cum consequatur, rerum ipsum ex tempore id numquam accusamus blanditiis aut quidem explicabo placeat voluptatibus natus?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae cumque sunt atque voluptatum nostrum facere repellat quo adipisci temporibus ab quisquam dignissimos voluptates earum repellendus eaque, quasi, minima voluptas iusto?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore aut veniam sunt delectus voluptatem, corporis quos ab, pariatur incidunt praesentium totam est hic libero officia sint vel repellat magni vero.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam amet nisi, nobis, non tempore id odio. Blanditiis nam omnis delectus commodi. Ipsum enim, aperiam deserunt placeat dignissimos facilis porro doloribus.
 		</div>
+
+
+		<!-- NOTIFICATIONS-->
+            <input type="checkbox" id="ShowNotification"> 
+        
+            <div class="NotificationContainer">
+                <div class="TailContainer"></div>
+                <div class="HeaderContainer">
+                    <a class="BtnNotification" style="float: left;" href=""><i class="material-icons">visibility</i></a>            
+                    <a class="BtnNotification" style="float: right; margin-right: 5px;" href=""><i class="material-icons">settings</i></a>
+                    <p>Notificaciones</p>
+                </div>
+            <!-- NOTIFICATIONS ITEM-->
+                <div class="NotificationBody">
+                    <div class="NotificationContent">
+                        <p class="NotificationTitle">Categoría</p>
+                        <div class="NotificationList">
+                            <div class="Notification">
+                                <div class="NotificationImage"><img src="http://www.ew.com/sites/default/files/i/2013/06/26/President-Obama_0.jpg" alt=""></div>
+                                <input type='checkbox' class="circle"></input>
+                                <p class="NotificationOwner">Nombre Notificación</p>
+                                <p id="NotificationDate">11/12/2015 07:28 a.m.</p>
+                            </div>            
+                            <div class="Notification">
+                                <div class="NotificationImage"><img src="http://www.ew.com/sites/default/files/i/2013/06/26/President-Obama_0.jpg" alt=""></div>
+                                <input type='checkbox' class="circle"></input>
+                                <p class="NotificationOwner">Nombre Notificación</p>
+                                <p id="NotificationDate">11/12/2015 07:28 a.m.</p>
+                            </div>                    
+                        </div>
+                    </div>
+            <!-- NOTIFICATIONS ITEM-->
+                <div class="NotificationBody">
+                    <div class="NotificationContent">
+                        <p class="NotificationTitle">Categoría</p>
+                        <div class="NotificationList">
+                            <div class="Notification">
+                                <div class="NotificationImage"><img src="http://www.ew.com/sites/default/files/i/2013/06/26/President-Obama_0.jpg" alt=""></div>
+                                <input type='checkbox' class="circle"></input>
+                                <p class="NotificationOwner">Nombre Notificación</p>
+                                <p id="NotificationDate">11/12/2015 07:28 a.m.</p>
+                            </div>            
+                            <div class="Notification">
+                                <div class="NotificationImage"><img src="http://www.ew.com/sites/default/files/i/2013/06/26/President-Obama_0.jpg" alt="Foto de perfil "></div>
+                                <input type='checkbox' class="circle"></input>
+                                <p class="NotificationOwner">Nombre Notificación</p>
+                                <p id="NotificationDate">11/12/2015 07:28 a.m.</p>
+                            </div>                
+                        </div>
+                    </div>
+            <!-- NOTIFICATIONS ITEM-->
+                <div class="NotificationBody">
+                    <div class="NotificationContent">
+                        <p class="NotificationTitle">Categoría</p>
+                        <div class="NotificationList">
+                            <div class="Notification">
+                                <div class="NotificationImage"><img src="http://www.ew.com/sites/default/files/i/2013/06/26/President-Obama_0.jpg" alt=""></div>
+                                <input type='checkbox' class="circle"></input>
+                                <p class="NotificationOwner">Nombre Notificación</p>
+                                <p id="NotificationDate">11/12/2015 07:28 a.m.</p>
+                            </div>            
+                            <div class="Notification">
+                                <div class="NotificationImage"><img src="http://www.ew.com/sites/default/files/i/2013/06/26/President-Obama_0.jpg" alt=""></div>
+                                <input type='checkbox' class="circle"></input>
+                                <p class="NotificationOwner">Nombre Notificación</p>
+                                <p id="NotificationDate">11/12/2015 07:28 a.m.</p>
+                            </div>                    
+                        </div>
+                    </div>
+            <!-- NOTIFICATIONS ITEM-->
+                <div class="NotificationBody">
+                    <div class="NotificationContent">
+                        <p class="NotificationTitle">Categoría</p>
+                        <div class="NotificationList">
+                            <div class="Notification">
+                                <div class="NotificationImage"><img src="http://www.ew.com/sites/default/files/i/2013/06/26/President-Obama_0.jpg" alt=""></div>
+                                <input type='checkbox' class="circle"></input>
+                                <p class="NotificationOwner">Nombre Notificación</p>
+                                <p id="NotificationDate">11/12/2015 07:28 a.m.</p>
+                            </div>            
+                            <div class="Notification">
+                                <div class="NotificationImage"><img src="http://www.ew.com/sites/default/files/i/2013/06/26/President-Obama_0.jpg" alt=""></div>
+                                <input type='checkbox' class="circle"></input>
+                                <p class="NotificationOwner">Nombre Notificación</p>
+                                <p id="NotificationDate">11/12/2015 07:28 a.m.</p>
+                            </div>                    
+                        </div>
+                    </div> 
+            <!-- END NOTIFICATIONS ITEM-->
+                </div>
+            </div>           
+        <!-- END NOTIFICATION -->
+
+</body>
+</html>
+
+
+
+
+
+
 		
 
 		
