@@ -5,7 +5,7 @@
 
 <input type="radio" id="MonografiaObservacionesRadio" name="tabs">
 		<div class="MonografiaObservaciones">
-			<label for="MonografiaObservacionesRadio"><p>Observaciones</p> </label><br><br><br>
+			<label id="TamLabel" for="MonografiaObservacionesRadio"><p>Observaciones</p> </label><br><br><br>
 
 			<div class="ContenedorAllItems">
 				
@@ -19,7 +19,7 @@
 
 <input type="radio" id="MonografiaRecomendacionesRadio" name="tabs">
 		<div class="MonografiaRecomendaciones">
-			<label for="MonografiaRecomendacionesRadio"><p>Recomendaciones</p> </label><br><br><br>
+			<label id="TamLabel" for="MonografiaRecomendacionesRadio"><p>Recomendaciones</p> </label><br><br><br>
 
 			<div class="ContenedorAllItems">
 				
@@ -34,7 +34,13 @@
 <input type="radio" id="MonografiaConsultaRadio" name="tabs" checked>
 		<div class="MonografiaConsulta">
 
-			<label for="MonografiaConsultaRadio"><p>Consulta</p> <a href="" id="AdConsulta"><abbr title="Agregar nueva consulta"><i class="material-icons">add</i></abbr><p id="SpanAdd">Agregar</p></a></label><br><br><br>
+			<label id="TamLabel" for="MonografiaConsultaRadio"><p>Consulta</p> 
+
+				<label class="AgregarConsulta" for="cancelCon"><i class="material-icons">add</i><span>Agregar</span></label>
+
+			</label><br><br><br>
+
+			
 
 			<div class="ContenedorAllItems">
 				
@@ -192,15 +198,12 @@
 				</div>
 
 
-				
-
-
-<!-- ------------------------------------------------------------------------------------------------------------------- -->
-
 		</div>
 				</div>
 
+<!-- ------------------------------------------------------------------------------------------------------------------- -->
 
+<input type="checkbox" id="cancelCon">
 <div class="AgregarConsultaForm">
 	    <div class="ContainerNewMessage">
         <form action="">
@@ -209,14 +212,15 @@
                  
 
                 <div class="ContenedorBotonesConsulta">                              
-                <input id="SendMessage" type="submit" value="." >
-              	<label id="LabelSend" for="SendMessage"><i class="material-icons">send</i></label> 
+                
+                 <label id="CanselInsert" for="cancelCon"><i class="material-icons">clear</i></label>
                   
                  <input id="file" type="file" name="upload" accept="image/jpg,image/png"/>
                  <label id="UploadFile" for="file"><i class="material-icons">cloud_upload</i></label>
 
-                 <input id="cancelCon" type="button" name="upload" accept="image/jpg,image/png"/>
-                 <label id="CanselInsert" for="cancelCon"><i class="material-icons">clear</i></label>
+                <input id="SendMessage" type="submit" value="." >
+              	<label id="LabelSend" for="SendMessage"><i class="material-icons">send</i></label> 
+
                  </div>
                                                 
 
