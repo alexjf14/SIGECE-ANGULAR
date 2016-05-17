@@ -10,6 +10,11 @@ button{
     -webkit-border-radius: 0;
 }
 
+.selectOrdenar{
+    -webkit-appearance: none;
+    -webkit-border-radius: 0;
+}
+
 input[type="search"],
 button{
     -webkit-appearance: none;

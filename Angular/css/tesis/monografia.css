@@ -108,6 +108,344 @@ padding-right: 1050px;
 /* ------------------------------------------------------------------------------------------------------------------- */
 
 .ContenedorAllItems{
-	height: calc(100vh - 243px);
+	height: calc(100vh - 247px);
 	overflow: auto;
+	margin-top: -40px;
+}
+
+html[data-useragent*='Chrome'] .ContenedorAllItems { /*  propiedad para Safari */
+	height: calc(100vh - 277px);
+}
+
+html[data-useragent*='Edge'] .ContenedorAllItems { /*  propiedad para Safari */
+	height: calc(100vh - 246px);
+}
+
+
+/* Estilos para el area de consultas*/
+
+.ConsultaProgreso{
+	text-align: center;
+	width: 100%;
+	overflow: hidden;
+	
+}
+
+
+
+.ConsultaProgreso ul li{
+	text-align: center;
+	width: 90px;
+	max-width: 90px;
+	height: 40px;
+	max-height: 40px;
+	display: inline-block;
+	background-color: transparent;
+	
+
+}
+.ConsultaProgreso .material-icons{
+	color: #fff;
+	font-size: 28px;
+	/* text-decoration: line-through; */
+	cursor: pointer;
+
+}
+
+.ConsultaProgreso .material-icons:hover{
+	transition: all 0.3s;
+	font-size: 40px;
+	margin-top: -12px;
+	color: rgba(255,202,40,1);
+
+}
+
+
+.MonografiaConsulta label p{ /* Esta propiedad hace que los titulos se centren en el label */
+	margin-top: -10px;
+	margin-left: 55px;
+}
+
+.MonografiaRecomendaciones label p{ /* Esta propiedad hace que los titulos se centren en el label */
+	margin-top: -10px;
+	margin-left: 55px;
+}
+
+.MonografiaObservaciones label p{ /* Esta propiedad hace que los titulos se centren en el label */
+	margin-top: -10px;
+	margin-left: 55px;
+}
+
+/* ------------------------------------------------------------------------------------------------------------------- */
+
+.MonografiaConsulta label a{
+	float: right;
+	margin-right: 70px;
+	margin-top: -88px;
+	display: none;
+}
+
+html[data-useragent*='Mozilla'] .MonografiaConsulta label a { /*  propiedad para mozilla */
+	margin-top: -35px;	
+}
+
+html[data-useragent*='Safari'] .MonografiaConsulta label a { /*  propiedad para Safari */
+	margin-top: -65px;	
+}
+
+html[data-useragent*='Chrome'] .MonografiaConsulta label a { /*  propiedad para Chrome */
+	margin-top: -88px;	
+}
+
+html[data-useragent*='Edge'] .MonografiaConsulta label a { /*  propiedad para Edge */
+	margin-top: -65px;	
+}
+
+.MonografiaConsulta label a .material-icons{
+	font-size: 34px;
+}
+
+#SpanAdd{
+	
+	font-size: 16px;
+	margin-left: -12px;
+}
+
+.MonografiaConsulta label a:hover{
+	transition: all 0.2s;
+	color: rgba(255,202,40,1);
+
+}
+
+
+.MonografiaConsulta label a:active{
+	
+	color: rgba(255,236,179,1);
+
+}
+
+#MonografiaConsultaRadio:checked ~ .MonografiaConsulta #AdConsulta{
+	display: block;
+}
+
+/* ------------------------------------------------------------------------------------------------------------------- */
+
+.ConsultaMensajes{
+	width: 39%;
+	margin-left: 5%;
+	margin-right: 5%;
+	
+	display: inline-block;
+	vertical-align: top;
+
+
+}
+.ConsultaMensajesSend{
+	margin: 25px;
+	background-color: #fff;
+	width: 90%;
+	min-width: 90%;
+	min-height: 60px;
+	box-shadow: 0px 2px 10px rgba(0,0,0,.3);
+}
+
+.ConsultaMensajesSend p{
+	padding: 15px;
+	color: #000;
+	text-align: justify;
+	
+}
+
+.PictureFile{
+	max-height: 100px;
+	max-width: 100px;
+	float: left;
+	margin-top: 15px;
+	margin-bottom: 15px;
+	margin-left: 15px;
+	margin-right: 15px;
+	clear: both;
+
+}
+
+.PictureFile img{
+	max-height: 100px;
+	max-width: 100px;
+}
+
+
+.ConsultaMensajes .MensagePersona{
+	background-color: #2ecc71;
+	color: rgba(239,235,233,1);
+	width: 100%;
+	min-height: 48px;
+	height: 48px;
+	text-align: center;
+	
+}
+
+.ConsultaMensajes .MensagePersona .picture{
+	height: 40px;
+	width: 40px;
+	float: left;
+	margin-left: 20px;
+	margin-top: 3px;
+	
+}
+
+.ConsultaMensajes .MensagePersona .picture img{
+	height: 40px;
+	width: 40px;
+	border-radius: 50%;
+	
+}
+
+.ConsultaMensajes .MensagePersona h3{
+	font-size: 16px;
+	font-weight: normal;
+	padding: 12px;
+	font-weight: bold;
+	float: left;
+}
+
+.VerDetalleConsulta{
+	
+	text-decoration: none;
+	color: #fff;
+	display: inline-block;
+	margin-right: -20px;
+}
+
+.VerDetalleConsulta:hover{
+	color: rgba(238,238,238,1);
+}
+
+.VerDetalleConsulta:active{
+	color: rgba(224,224,224,1);
+}
+
+.VerDetalleConsulta .material-icons{
+	display: inline-flex;
+    vertical-align: middle;
+    margin-top: 12px;
+    margin-right: 12px;
+
+}
+
+.ConsultaMensajes .MensagePersona p{
+
+	font-size: 11px;
+	display: inline-block;
+	float: right;
+	color: #fff;
+	font-style: oblique;
+
+}
+
+/* ------------------------------------------------------------------------------------------------------------------- */
+
+.AgregarConsultaForm{
+	width: calc(100% - 50px);
+	background-color: rgba(238,238,238,1);
+	bottom: 0;
+	position: fixed;
+	z-index: -1;
+	color: #000;
+	box-shadow: 0px 2px 10px rgba(0,0,0,.3);
+	
+	
+}
+
+/* .AgregarConsultaForm form{
+	margin: 0 auto;
+	padding: 20px;
+	padding-bottom: 0px;
+	width: 600px;
+	background-color: orange;
+}
+ */
+
+ .ContainerNewMessage{
+	width: 600px;
+	margin: 0 auto;
+
+	
+}
+
+#TextMessage{
+	border-style: none;
+	padding: 10px;
+	display: inline-block;
+	float: left;
+	width: 400px;
+	height: 200px;
+	
+	border-top: 2px solid #00bcd4;
+    border-left: 2px solid #00bcd4;
+    border-right: 2px solid #00bcd4;
+}
+
+#SendMessage{
+	display: none;
+
+}
+
+#LabelSend{
+	
+	color: #fff;
+	width: 60%;
+	padding: 6.5px;
+	background-color: #3498db;
+	display: inline-block;
+	
+	font-size: 20px;
+	font-weight: bold;
+	cursor: pointer;
+	text-align: center;
+	padding-right: 12px;
+	margin-bottom: 20px;
+	margin: 0 auto;
+}
+
+#LabelSend:hover{
+	background-color: #039be5;
+}
+
+#LabelSend:active{
+	background-color: #0277bd;
+}
+
+
+#file{
+	display: none;
+}
+
+#UploadFile{
+	
+	color: #fff;
+	width: 100%;
+	padding: 6.5px;
+	background-color: #515151;
+	display: inline-block;
+	float: right;
+	font-size: 20px;
+	font-weight: bold;
+	cursor: pointer;
+	text-align: center;
+	padding-right: 5px;
+}
+
+#UploadFile:hover{
+background-color: rgba(51,51,51,0.7);
+}
+
+#UploadFile:active{
+background-color: rgba(51,51,51,0.9); 
+}
+
+.ContenedorBotonesConsulta{
+	width: 200px;
+	float: right;
+	
+	
 }
