@@ -22,6 +22,11 @@ IndexApp.config(function($routeProvider) {
             templateUrl : '../templates/tesis/monografia.html'
 
     })
+
+      .when('/mensages', {
+            templateUrl : '../templates/tesis/mensages.html'
+
+    })
  
         .otherwise({
             redirectTo: '/'

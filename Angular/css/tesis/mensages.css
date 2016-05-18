@@ -1,0 +1,204 @@
+.ContenedorDerechoLI{
+
+	width: 30%;
+	height: calc(100vh - 50px);
+	overflow: hidden;
+	background-color: #fff;
+	float: left;
+	display: inline-block;
+	color: #000;
+	border-right: solid 1px #e0e0e0;
+}
+
+.ContenedorIzquierdoLI{
+	width: 70%;
+	height: calc(100vh - 50px);
+	overflow: hidden;
+	background-color: #fff;
+	float: left;
+	display: inline-block;
+	color: #000;
+	border-right: solid 1px #e0e0e0;
+	background-color: rgba(245,245,245,1);
+}
+
+.ContenedorDerechoTitulo{
+	width: 100%;
+	text-align: center;
+	color:rgba(41, 128, 185,1.0);
+	padding: 10px;
+	font-size: 18px;
+	border-bottom: solid 1px #e0e0e0;
+	min-height: 45px;
+	max-height: 45px;
+}
+
+.ContenedorIzquierdoEncabezado{
+	width: 100%;
+	border-bottom: solid 1px #e0e0e0;
+	height: 45px;
+	min-height: 45px;
+	max-height: 45px;
+	background-color: #fff;
+}
+
+.BuscarRemitente{
+	width: 100%;
+	height: 60px;
+	display: inline-block;
+	border-bottom: solid 1px #e0e0e0;
+}
+
+.OrdenarPor{
+	width: 100%;
+	height: 60px;
+	display: inline-block;
+	border-bottom: solid 1px #e0e0e0;
+}
+
+.OrdenarPor div{
+	float: left;
+	padding-left: 20px;
+	padding-top: 22px;
+}
+
+.selectOrdenar{
+	float: right;
+	width: 60%;
+	padding: 8px;
+	border-style: none;
+	border:solid 1px #e0e0e0;
+	margin-top: 11px;
+	margin-right: 20px;
+}
+
+.ListUsers{
+	overflow-y: auto;
+	overflow-x: hidden;
+	overflow: 
+	width: 100%;
+	height: calc(100vh - 217px);
+	margin-top: -5px;
+
+}
+
+
+.imgIdUser{
+	width: 40px;
+	height: 40px;
+	display: inline-block;
+	float: left;
+}
+
+.idUser ul li #NameUser{
+padding: 10px;
+margin-left: 40px;
+cursor: pointer;
+color: #000;
+ }
+
+ .idUser ul li:hover{
+background-color: rgba(224,224,224,1);
+ }
+
+  .idUser ul li:active{
+	background-color: rgba(189,189,189,1);
+ }
+
+ .idUser ul li{
+ 	margin-bottom: 0px;
+ 	width: 100%;
+ 	background-color: transparent;
+
+ }
+
+.imgIdUser img{
+	width: 100%;
+	height: 100%;
+	border-radius: 50% 50%;
+}
+
+/*  ------------------------------------------------------------------------------------------------------- */
+.ChatsInOut{
+	/* background: orange; */
+	width: 100%;
+	height: calc(100vh - 138px);
+	overflow-y: auto;
+}
+
+/*  ------------------------------------------------------------------------------------------------------- */
+.EnviarChat{
+	width: 100%;
+	
+}
+
+.ChatWrite{
+	width: calc(100% - 100px);
+	padding: 10px;
+	font-size: 16px;
+	border:none;
+	display: inline-block;
+	float: left;
+	border-top: 2px solid #00bcd4;
+	border-left: 2px solid #00bcd4;
+}
+
+.SubmtSend{
+	width: 100px;
+	padding: 11px;
+	background-color: rgba(41, 128, 185,1.0);
+	border-style: none;
+	font-size: 17px;
+	color: #fff;
+	cursor: pointer;
+}
+
+.SubmtSend:hover{
+	background-color: rgba(52, 152, 219,1.0);
+}
+
+.SubmtSend:active{
+	background-color: rgba(52, 152, 219,0.7);
+}
+
+/*  ------------------------------------------------------------------------------------------------------- */
+
+.BuscarRemitente{
+	padding: 10px;
+	padding-top: 7px;
+	padding-bottom: 5px;
+}
+
+.BuscarRemitente .iconSearch{
+width: 55px;
+min-width: 55px;
+padding:11px;
+background-color: #fff;
+border-right: 2px solid rgba(41, 128, 185,1.0);
+float: left;
+display: inline-block;
+border-bottom: solid 1px #e0e0e0;
+border-left: solid 1px #e0e0e0;
+border-top: solid 1px #e0e0e0;
+text-align: center;
+max-height: 46px;
+min-height: 45px;
+color: rgba(41, 128, 185,1.0);
+}
+
+html[data-useragent*='Firefox'] .BuscarRemitente .iconSearch { /*  propiedad para mozilla */
+
+	max-height: 47px;
+}
+
+.BuscarRemitente .textSerch{
+	width: calc(100% - 55px);
+	padding: 11px;
+	margin-left: 0px;
+	font-size: 14px;
+	border:none;
+	font-size: 16px;
+	border-bottom: solid 1px #e0e0e0;
+	border-right: solid 1px #e0e0e0;
+	border-top: solid 1px #e0e0e0;
+}
