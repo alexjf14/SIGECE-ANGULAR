@@ -126,6 +126,94 @@ background-color: rgba(224,224,224,1);
 	overflow-y: auto;
 }
 
+.ChatRemitente{
+	width: 50%;
+	margin: 15px;
+	float: left;
+
+}
+
+.ChatRemitente .ContainerImgUserChat{
+	width: 40px;
+	height: 40px;
+	float: left; 
+}
+
+.ChatRemitente .ContainerImgUserChat img{
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+}
+
+.MensageRemitente{
+	background: rgba(51,51,51,1.0);
+	margin-left: 55px;
+	color: #fff;
+	padding: 10px;
+	border-radius: 7px;
+	min-height: 60px;
+}
+
+
+.trianguloRemitente {
+     width: 0; 
+     height: 0; 
+     border-right: 18px solid rgba(51,51,51,1.0);
+     border-top: 18px solid transparent;
+     border-bottom: 18px solid transparent; 
+     float: left;
+     margin-top: 3px;
+}
+
+.ChatsInOut .Date{
+	width: 100%;
+	text-align: right;
+	font-style: italic;
+	font-size: 12px;
+}
+
+/*  ------------------------------------------------------------------------------------------------------- */
+
+
+.ChatDestinatario{
+	width: 50%;
+	margin: 15px;
+	float: right;
+}
+
+.ChatDestinatario .ContainerImgUserChat{
+	width: 40px;
+	height: 40px;
+	float: right; 
+}
+
+.ChatDestinatario .ContainerImgUserChat img{
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+}
+
+.MensageDestinatario{
+	background: rgb(0, 120, 215);
+	margin-right: 55px;
+	color: #fff;
+	padding: 10px;
+	border-radius: 7px;
+	min-height: 60px;
+}
+
+
+.trianguloDestinatario {
+     width: 0; 
+     height: 0; 
+     border-left: 18px solid rgb(0, 120, 215);
+     border-top: 18px solid transparent;
+     border-bottom: 18px solid transparent; 
+     float: right;
+     margin-top: 3px;
+ }
+
+
 /*  ------------------------------------------------------------------------------------------------------- */
 .EnviarChat{
 	width: 100%;
@@ -133,7 +221,7 @@ background-color: rgba(224,224,224,1);
 }
 
 .ChatWrite{
-	width: calc(100% - 100px);
+	width: calc(100% - 130px);
 	padding: 10px;
 	font-size: 16px;
 	border:none;
@@ -144,7 +232,7 @@ background-color: rgba(224,224,224,1);
 }
 
 .SubmtSend{
-	width: 100px;
+	width: 130px;
 	padding: 11px;
 	background-color: rgba(41, 128, 185,1.0);
 	border-style: none;
