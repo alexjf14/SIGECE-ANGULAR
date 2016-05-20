@@ -1,0 +1,34 @@
+.ContenedorPerfilUserGrupo{
+	height: calc(100vh - 50px);
+	background-color: rgba(245,245,245,1);
+	color: #000;
+	padding: 50px;
+	padding-left: 0px;
+	padding-right: 0px;
+}
+
+.RegresarEquipos a {
+	position: absolute;
+	float: left;
+	margin-left: 40px;
+}
+
+.RegresarEquipos a .material-icons:hover {
+  text-shadow:0px -1px 17px rgba(0,0,0,.4);
+}
+
+.RegresarEquipos a .material-icons:active {
+  text-shadow:0px -1px 17px rgba(0,0,0,0.7);
+}
+
+.RegresarEquipos a .material-icons{
+	font-size: 38px;
+	color: #000;
+}
+.ContainerElementosPerfil{
+	height: calc(100vh - 150px);
+	width: 60%;
+	margin: 0 auto;
+	background-color: #fff;
+	box-shadow: 0px 2px 10px rgba(0,0,0,.3);
+}

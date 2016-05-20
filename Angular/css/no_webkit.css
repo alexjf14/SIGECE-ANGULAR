@@ -103,3 +103,10 @@ textarea{
     -webkit-appearance: none;
     -webkit-border-radius: 0;
 }
+
+html[data-useragent*='iPad'] .selectOrdenar { /*  propiedad para iPad*/
+    -webkit-appearance: none;
+    -webkit-border-radius: 0;
+    width: 40%;
+}
+

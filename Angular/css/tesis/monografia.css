@@ -152,14 +152,6 @@ html[data-useragent*='Edge'] .ContenedorAllItems { /*  propiedad para Safari */
 
 }
 
-.ConsultaProgreso .material-icons:hover{
-	transition: all 0.3s;
-	font-size: 40px;
-	margin-top: -12px;
-	color: rgba(255,202,40,1);
-
-}
-
 
 .MonografiaConsulta label p{ /* Esta propiedad hace que los titulos se centren en el label */
 	margin-top: -10px;
@@ -357,7 +349,7 @@ margin-top: -70px;
 	display: inline-block;
 	float: right;
 	color: #fff;
-	font-style: oblique;
+	font-style: italic;
 
 }
 
@@ -375,15 +367,6 @@ margin-top: -70px;
 	
 	
 }
-
-/* .AgregarConsultaForm form{
-	margin: 0 auto;
-	padding: 20px;
-	padding-bottom: 0px;
-	width: 600px;
-	background-color: orange;
-}
- */
 
  .ContainerNewMessage{
 	width: 100%;
@@ -493,8 +476,76 @@ background-color: rgba(239,83,80,0.9);
 .ContenedorBotonesConsulta{
 	float: right;
 	width: 150px;
-	
-	
 }
+
+
+/* ------------------------------------------------------------------------------------------------------------------- */
+
+
+.ConsultaProgreso ul li ul{ /* Estilos del contenedor de el Toltip */
+	display: none;
+	position: absolute;
+	background-color: rgba(245,245,245,1);
+	width: 300px;
+	border:2px;
+	border-style: solid;
+    border-color: #f1c40f;
+    border-radius: 5px;
+    color: #000;
+    margin-left: -119px;
+    margin-top: 8px;
+}
+
+.ConsultaProgreso ul li ul li{
+	width: 300px;
+	max-width: 300px;
+}
+
+.ConsultaProgreso ul li:hover > ul{ /* Hace que el Toltip Aparezca */
+	transition: all 0.9s;
+	display: block;
+}
+
+.ConsultaProgreso ul li:hover > .material-icons{ /* Aplica el efecto de aumento y tancicion al circulo */
+	transition: all 0.3s;
+	font-size: 40px;
+	margin-top: -12px;
+	color: rgba(255,202,40,1);
+	cursor: pointer;
+}
+
+.ToltipConsulta p{
+	float: left;
+	font-size: 14px;
+}
+
+.PictureToltip{ /* Propiedades del contenedor de las imagenes de usuarios contenidas en el tiltip */
+	width: 30px;
+	height: 30px;
+	float: right;
+	margin-top: -7px;
+	margin-left: 5px;
+}
+
+.PictureToltip img{
+	width: 30px;
+	height: 30px;
+	border-radius: 50%;
+}
+
+.ToltipTriangulo{ /* Estilos del triangulo superios q une el toltip con el circulo */
+	 width: 0;
+     height: 0;
+     border-right: 18px solid transparent;
+     border-top: 18px solid transparent;
+     border-left: 18px solid transparent;
+     border-bottom: 18px solid  #f1c40f;
+     margin: 0 auto;
+     margin-top: -38px;
+
+}
+
+
+/* ------------------------------------------------------------------------------------------------------------------- */
 
 

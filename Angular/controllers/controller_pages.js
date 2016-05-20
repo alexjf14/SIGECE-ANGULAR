@@ -27,6 +27,12 @@ IndexApp.config(function($routeProvider) {
             templateUrl : '../templates/tesis/mensages.html'
 
     })
+
+    
+      .when('/perfilGrupo', {
+            templateUrl : '../templates/tesis/perfilGrupo.html'
+
+    })
  
         .otherwise({
             redirectTo: '/'
