@@ -576,3 +576,16 @@ footer{ /** Estilos del footer **/
     background-color: transparent; 
 }
 }
+
+#ImagenFormasC{
+	float: left;
+	width: 130px;
+	height: 130px;
+	margin-right: 20px;
+	margin-top: 3px;
+}
+
+#ImagenFormasC img{
+	width: 130px;
+	height: 130px;
+}

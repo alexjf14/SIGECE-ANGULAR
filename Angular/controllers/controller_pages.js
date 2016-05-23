@@ -33,6 +33,12 @@ IndexApp.config(function($routeProvider) {
             templateUrl : '../templates/tesis/perfilGrupo.html'
 
     })
+
+          
+      .when('/peticion_abandono_grupo', {
+            templateUrl : '../templates/tesis/peticion_abandono_grupo.html'
+
+    })
  
         .otherwise({
             redirectTo: '/'
